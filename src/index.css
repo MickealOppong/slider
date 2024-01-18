@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: lightslategray;
+}
+
+.img {
+  width: 90vw;
+  height: 90vh;
+  object-fit: cover;
+}
+
+
+.slider {
+  margin: 0 auto;
+  margin-top: 10rem;
+  width: 90vw;
+  height: 520px;
+  max-width: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+
+}
+
+.info {
+  padding: 1rem;
+
+}
+
+.fa-map {
+  color: darkcyan;
+  margin-right: 5px;
+}
+
+.location,
+.category {
+  text-transform: capitalize;
+}
+
+.desc {
+  line-height: 1.5rem;
+}
+
+.btn {
+  background-color: lightslategray;
+  border-color: transparent;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.left-btn {
+  left: 0;
+}
+
+.right-btn {
+  right: 0;
+}
+
+.price {
+  position: absolute;
+  top: -3%;
+  right: 0;
+  width: 4rem;
+  padding: 0.5rem;
+  background-color: darkcyan;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 40px;
+}
+
+@media screen and (min-width:800px) {
+  .slider {
+    width: 60vw;
+  }
+
+  .img {
+    width: 60vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
