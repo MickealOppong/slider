@@ -3,11 +3,11 @@ import Img from "./components/Img"
 import Info from "./components/Info"
 import LeftButton from "./components/LeftButton"
 import RightButton from "./components/RightButton"
-import { tourList } from './data'
+import { shortList } from './data'
 
 
 function App() {
-  const [item, setItem] = useState(tourList)
+  const [item, setItem] = useState(shortList)
   const [curIndex, setCurIndex] = useState(0);
 
   const next = () => {
